@@ -1,0 +1,61 @@
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.calendar-wrapper {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: var(--card-bg);
+  /* Custom overrides for the big calendar to match notion vibe */
+}
+
+.rbc-calendar {
+  font-family: 'Inter', sans-serif;
+}
+
+.rbc-header {
+  padding: 0.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.rbc-month-view, .rbc-time-view, .rbc-agenda-view {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-color);
+}
+
+.rbc-day-bg + .rbc-day-bg {
+  border-left: 1px solid var(--border-color);
+}
+
+.rbc-month-row + .rbc-month-row {
+  border-top: 1px solid var(--border-color);
+}
+
+.rbc-off-range-bg {
+  background-color: var(--bg-secondary);
+}
+
+.rbc-today {
+  background-color: rgba(35, 131, 226, 0.05);
+}
+
+.rbc-event {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 3px 6px;
+}
+
+.rbc-btn-group button {
+  color: var(--text-primary);
+  border-color: var(--border-color);
+  background-color: var(--card-bg);
+}
+
+.rbc-btn-group button:hover, .rbc-btn-group button:active, .rbc-btn-group .rbc-active {
+  background-color: var(--bg-secondary);
+  box-shadow: none;
+}
